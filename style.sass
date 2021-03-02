@@ -1,1 +1,62 @@
+@font-face
+    font-family: "Roboto-Regular"
+    src: url("fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+    url("fonts/Roboto/Roboto-Regular.woff") format("woff"),
+    url("fonts/Roboto/Roboto-Regular.ttf") format("ttf")
 
+@font-face
+    font-family: "Roboto-Black"
+    src: url("fonts/Roboto/Roboto-Black.woff2") format("woff2"),
+    url("fonts/Roboto/Roboto-Black.woff") format("woff"),
+    url("fonts/Roboto/Roboto-Black.ttf") format("ttf")
+
+$colorTitle: #2F3132
+$colorBack1: #E0E1E2
+$colorBack1: #EDEDED
+
+=title-h2()
+    font-family: Roboto-Black
+    font-weight: 900
+    font-size: 20px
+    line-height: 23px
+    text-align: center
+    color: $colorTitle
+
+=text()
+    font-family: Roboto-Regular
+    font-weight: normal
+    font-size: 14px
+    line-height: 16px
+    text-align: center
+    color: $colorTitle
+
+=centerContent()
+    display: flex
+    justify-content: center
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.logitech
+    padding-top: 25px
+    padding-bottom: 48px
+    background: $colorBack1
+    &__header
+        +centerContent()
+    &__image
+        margin-top: 94px
+        margin-bottom: 67px
+        height: 230px
+        background-image: url(img/MX-Master1.png)
+        background-repeat: no-repeat
+        background-size: contain
+    &__title
+        +title-h2()
+    &__text
+        margin-bottom: 40px
+        margin-right: 59px
+        margin-left: 59px
+        +text()
+    &__arrow
+        +centerContent()

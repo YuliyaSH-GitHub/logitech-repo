@@ -1,1 +1,71 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("fonts/Roboto/Roboto-Regular.woff") format("woff"), url("fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("fonts/Roboto/Roboto-Black.woff2") format("woff2"), url("fonts/Roboto/Roboto-Black.woff") format("woff"), url("fonts/Roboto/Roboto-Black.ttf") format("ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.logitech {
+  padding-top: 25px;
+  padding-bottom: 48px;
+  background: #EDEDED;
+}
+
+.logitech__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logitech__image {
+  margin-top: 94px;
+  margin-bottom: 67px;
+  height: 230px;
+  background-image: url(img/MX-Master1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logitech__title {
+  font-family: Roboto-Black;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #2F3132;
+}
+
+.logitech__text {
+  margin-bottom: 40px;
+  margin-right: 59px;
+  margin-left: 59px;
+  font-family: Roboto-Regular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
+}
+
+.logitech__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
