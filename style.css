@@ -167,6 +167,17 @@
   padding: 10px 17px;
   -ms-flex-preferred-size: 166px;
       flex-basis: 166px;
+  min-height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .darkfield__heading {
@@ -176,6 +187,7 @@
   line-height: 23px;
   text-align: center;
   color: #2F3132;
+  text-transform: uppercase;
   margin-bottom: 5px;
 }
 
@@ -211,5 +223,51 @@
   margin-bottom: 20px;
   margin-right: 33px;
   margin-left: 34px;
+}
+
+.flow {
+  background-color: #EDEDED;
+  padding-top: 70px;
+  padding-bottom: 218px;
+  background-image: url("img/High_Resolution_JPG-MX Lifestyle 2346 1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+.flow__title {
+  font-family: Roboto-Black;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #2F3132;
+  margin-bottom: 20px;
+}
+
+.flow__text {
+  margin-bottom: 10px;
+  margin-right: 33px;
+  margin-left: 34px;
+  font-family: Roboto-Regular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
+}
+
+.flow__list {
+  text-decoration: none;
+}
+
+.flow__item {
+  text-decoration: none;
+  font-family: Roboto-Regular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
 }
 /*# sourceMappingURL=style.css.map */
