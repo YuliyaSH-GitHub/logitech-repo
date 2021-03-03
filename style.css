@@ -103,7 +103,7 @@
 
 .bluetooth__text {
   margin-bottom: 31px;
-  margin-right: 34px;
+  margin-right: 33px;
   margin-left: 34px;
   font-family: Roboto-Regular;
   font-weight: normal;
@@ -243,6 +243,8 @@
   text-align: center;
   color: #2F3132;
   margin-bottom: 20px;
+  margin-right: 28px;
+  margin-left: 29px;
 }
 
 .flow__text {
@@ -272,6 +274,7 @@
   color: #2F3132;
   text-align: left;
   margin-bottom: 16px;
+  width: 224px;
 }
 
 .flow ::marker {
@@ -281,5 +284,118 @@
   line-height: 16px;
   text-align: center;
   color: #2F3132;
+}
+
+.master {
+  background-color: #EDEDED;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.master__title {
+  font-family: Roboto-Black;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #2F3132;
+  margin-bottom: 20px;
+}
+
+.master__text {
+  margin-bottom: 35px;
+  margin-right: 33px;
+  margin-left: 34px;
+  font-family: Roboto-Regular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
+}
+
+.master__slider {
+  margin: 35px 22px 98px 23px;
+}
+
+.master__content {
+  background-color: #C4C4C4;
+  padding: 23px 22px 26px 29px;
+  font-family: Roboto-Regular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.master__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.master__content-text {
+  margin-right: 33px;
+  margin-left: 34px;
+}
+
+.ergonomics {
+  padding-top: 70px;
+}
+
+.ergonomics__title {
+  font-family: Roboto-Black;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #2F3132;
+  margin-bottom: 20px;
+}
+
+.ergonomics__title2 {
+  margin-top: 70px;
+}
+
+.ergonomics__text {
+  margin-bottom: 20px;
+  margin-right: 33px;
+  margin-left: 34px;
+  font-family: Roboto-Regular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
+}
+
+.footer {
+  background-color: #2F3132;
+  min-height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__copyright {
+  width: 85px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 8px;
+  text-align: center;
+  color: #C7C8C8;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,30 +10,8 @@
     url("fonts/Roboto/Roboto-Black.woff") format("woff"),
     url("fonts/Roboto/Roboto-Black.ttf") format("ttf")
 
-$colorTitle: #2F3132
-$colorBack1: #E0E1E2
-$colorBack2: #EDEDED
-$colorHeading: #C4C4C4
+@import "style_mixin.sass"
 
-=title-h2()
-    font-family: Roboto-Black
-    font-weight: 900
-    font-size: 20px
-    line-height: 23px
-    text-align: center
-    color: $colorTitle
-
-=text()
-    font-family: Roboto-Regular
-    font-weight: normal
-    font-size: 14px
-    line-height: 16px
-    text-align: center
-    color: $colorTitle
-
-=centerContent()
-    display: flex
-    justify-content: center
 *
     margin: 0
     padding: 0
@@ -78,8 +56,7 @@ $colorHeading: #C4C4C4
         margin-bottom: 20px
     &__text
         margin-bottom: 31px
-        margin-right: 34px
-        margin-left: 34px
+        +marginRL()
         +text()
     &__heading
         font-family: Roboto
@@ -133,8 +110,7 @@ $colorHeading: #C4C4C4
     &__text-carousel
         +text()
         margin-bottom: 20px
-        margin-right: 33px
-        margin-left: 34px
+        +marginRL()
 .flow
     background-color: $colorBack2
     padding-top: 70px
@@ -146,10 +122,11 @@ $colorHeading: #C4C4C4
     &__title
         +title-h2()
         margin-bottom: 20px
+        margin-right: 28px
+        margin-left: 29px
     &__text
         margin-bottom: 10px
-        margin-right: 33px
-        margin-left: 34px
+        +marginRL()
         +text()
     &__list
         // list-style: none
@@ -160,5 +137,55 @@ $colorHeading: #C4C4C4
         +text()
         text-align: left
         margin-bottom: 16px
+        width: 224px
     ::marker
         +text()
+.master
+    background-color: $colorBack2
+    padding-top: 70px
+    padding-bottom: 60px
+    &__title
+        +title-h2()
+        margin-bottom: 20px
+    &__text
+        margin-bottom: 35px
+        +marginRL()
+        +text()
+    &__slider
+        margin: 35px 22px 98px 23px
+    &__content
+        background-color: $colorHeading
+        padding: 23px 22px 26px 29px
+        +textMaster()
+    &__icon
+        display: flex
+        justify-content: space-between
+        margin-bottom: 20px
+    &__content-text
+        +marginRL()
+.ergonomics
+    padding-top: 70px
+    &__title
+        +title-h2()
+        margin-bottom: 20px
+    &__title2
+        margin-top: 70px
+    &__text
+        margin-bottom: 20px
+        +marginRL()
+        +text()
+.footer
+    background-color: $colorTitle
+    min-height: 75px
+    +centerContent()
+    align-items: center
+
+    &__copyright
+        width: 85px
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 7px
+        line-height: 8px
+        text-align: center
+        color: $colorFooter
