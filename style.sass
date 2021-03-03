@@ -89,3 +89,27 @@ $colorHeading: #C4C4C4
         text-align: center
         text-transform: uppercase
         color: $colorHeading
+
+.darkfield
+    padding-top: 70px
+    padding-bottom: 63px
+    &__title
+        +title-h2()
+        margin-bottom: 20px
+    &__text
+        margin-bottom: 30px
+        margin-right: 61px
+        margin-left: 67px
+        +text()
+    &__info
+        display: flex
+        justify-content: space-between
+        margin-bottom: 28px
+    &__info-box
+        border: 1px solid $colorTitle
+        padding: 10px 17px
+    &__heading
+        +title-h2()
+        margin-bottom: 5px
+    &__desc
+        +text()
