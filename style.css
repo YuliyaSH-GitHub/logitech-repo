@@ -154,15 +154,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 28px;
+  -webkit-column-gap: 6px;
+          column-gap: 6px;
 }
 
 .darkfield__info-box {
   border: 1px solid #2F3132;
   padding: 10px 17px;
+  -ms-flex-preferred-size: 166px;
+      flex-basis: 166px;
 }
 
 .darkfield__heading {
@@ -182,5 +186,30 @@
   line-height: 16px;
   text-align: center;
   color: #2F3132;
+  margin-bottom: 0;
+}
+
+.darkfield__heading-carousel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+
+.darkfield__text-carousel {
+  font-family: Roboto-Regular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
+  margin-bottom: 20px;
+  margin-right: 33px;
+  margin-left: 34px;
 }
 /*# sourceMappingURL=style.css.map */
