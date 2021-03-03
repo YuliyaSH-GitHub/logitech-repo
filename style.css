@@ -15,10 +15,15 @@
           box-sizing: border-box;
 }
 
+.wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
 .logitech {
   padding-top: 25px;
   padding-bottom: 48px;
-  background: #EDEDED;
+  background: #E0E1E2;
 }
 
 .logitech__header {
@@ -37,6 +42,7 @@
   background-image: url(img/MX-Master1.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 .logitech__title {
@@ -67,5 +73,53 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.bluetooth {
+  background-color: #EDEDED;
+  padding-top: 49px;
+  padding-bottom: 18px;
+}
+
+.bluetooth__pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bluetooth__title {
+  font-family: Roboto-Black;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #2F3132;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bluetooth__text {
+  margin-bottom: 31px;
+  margin-right: 34px;
+  margin-left: 34px;
+  font-family: Roboto-Regular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
+}
+
+.bluetooth__heading {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #C4C4C4;
 }
 /*# sourceMappingURL=style.css.map */
