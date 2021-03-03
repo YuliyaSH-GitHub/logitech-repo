@@ -258,11 +258,23 @@
 }
 
 .flow__list {
-  text-decoration: none;
+  padding-left: 54px;
+  padding-right: 54px;
+  margin-top: 36px;
 }
 
 .flow__item {
-  text-decoration: none;
+  font-family: Roboto-Regular;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.flow ::marker {
   font-family: Roboto-Regular;
   font-weight: normal;
   font-size: 14px;
