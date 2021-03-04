@@ -262,6 +262,7 @@ body {
   padding-left: 54px;
   padding-right: 54px;
   margin-top: 36px;
+  list-style-position: inside;
 }
 
 .flow__item {
@@ -549,6 +550,56 @@ body {
     margin-bottom: 20px;
     margin-right: 77px;
     margin-left: 77px;
+  }
+  .flow {
+    padding-bottom: 496px;
+    background-image: url("img/High_Resolution_JPG-MX Lifestyle 2346 2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+  }
+  .flow__title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 30px;
+    margin-right: 129px;
+    margin-left: 129px;
+  }
+  .flow__text {
+    margin-bottom: 70px;
+    margin-right: 65px;
+    margin-left: 64px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .flow__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .flow__item {
+    width: auto;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+    padding: 8px 15px 4px 15px;
+  }
+  .flow__item:first-child {
+    padding-left: 0;
+  }
+  .flow__item:last-child {
+    padding-right: 0;
+  }
+  .flow ::marker {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .flow__item2 {
+    border-right: 1px solid #2F3132;
+    border-left: 1px solid #2F3132;
   }
 }
 /*# sourceMappingURL=style.css.map */

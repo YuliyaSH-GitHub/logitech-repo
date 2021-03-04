@@ -19,10 +19,6 @@
 body
     font-family: Roboto
 
-// .wrapper
-//     max-width: 375px
-//     margin: 0 auto //эта часть под вопросом
-
 .logitech
     padding-top: 25px
     padding-bottom: 48px
@@ -134,6 +130,7 @@ body
     background-image: url("img/High_Resolution_JPG-MX Lifestyle 2346 1.png")
     background-repeat: no-repeat
     background-size: contain
+    block-size:
     background-position: center bottom
     &__title
         +title-h2()
@@ -145,10 +142,10 @@ body
         +marginRL()
         +text()
     &__list
-        // list-style: none
         padding-left: 54px
         padding-right: 54px
         margin-top: 36px
+        list-style-position: inside
     &__item
         +text()
         text-align: left
@@ -297,3 +294,37 @@ body
         // &__info-item
         //     // width: 894px
         //     // height: 573px
+    .flow
+        padding-bottom: 496px
+        background-image: url("img/High_Resolution_JPG-MX Lifestyle 2346 2.png")
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center bottom
+        &__title
+            +titleTablet-h2()
+            margin-bottom: 30px
+            margin-right: 129px
+            margin-left: 129px
+        &__text
+            margin-bottom: 70px
+            margin-right: 65px
+            margin-left: 64px
+            +textTablet()
+        &__list
+            +centerContent()
+        &__item
+            width: auto
+            font-size: 20px
+            line-height: 23px
+            text-align: left
+            padding: 8px 15px 4px 15px
+        &__item:first-child
+            padding-left: 0
+        &__item:last-child
+            padding-right: 0
+        ::marker
+            font-size: 20px
+            line-height: 23px
+        &__item2
+            border-right: 1px solid $colorTitle
+            border-left: 1px solid $colorTitle
