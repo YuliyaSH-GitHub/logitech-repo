@@ -1,14 +1,14 @@
-@font-face
-    font-family: "Roboto-Regular"
-    src: url("fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
-    url("fonts/Roboto/Roboto-Regular.woff") format("woff"),
-    url("fonts/Roboto/Roboto-Regular.ttf") format("ttf")
+// @font-face
+//     font-family: "Roboto-Regular"
+//     src: url("fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+//     url("fonts/Roboto/Roboto-Regular.woff") format("woff"),
+//     url("fonts/Roboto/Roboto-Regular.ttf") format("ttf")
 
-@font-face
-    font-family: "Roboto-Black"
-    src: url("fonts/Roboto/Roboto-Black.woff2") format("woff2"),
-    url("fonts/Roboto/Roboto-Black.woff") format("woff"),
-    url("fonts/Roboto/Roboto-Black.ttf") format("ttf")
+// @font-face
+//     font-family: "Roboto-Black"
+//     src: url("fonts/Roboto/Roboto-Black.woff2") format("woff2"),
+//     url("fonts/Roboto/Roboto-Black.woff") format("woff"),
+//     url("fonts/Roboto/Roboto-Black.ttf") format("ttf")
 
 @import "style_mixin.sass"
 
@@ -16,10 +16,12 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+body
+    font-family: Roboto
 
-.wrapper
-    max-width: 375px
-    margin: 0 auto //эта часть под вопросом
+// .wrapper
+//     // max-width: 375px
+//     margin: 0 auto //эта часть под вопросом
 
 .logitech
     padding-top: 25px
@@ -44,6 +46,7 @@
         +text()
     &__arrow
         +centerContent()
+
 .bluetooth
     background-color: $colorBack2
     padding-top: 49px
@@ -59,13 +62,14 @@
         +marginRL()
         +text()
     &__heading
-        font-family: Roboto
         font-weight: 900
         font-size: 60px
         line-height: 70px
         text-align: center
         text-transform: uppercase
         color: $colorHeading
+    &__img
+        +centerContent()
 
 .darkfield
     padding-top: 70px
@@ -98,7 +102,6 @@
         +text()
         margin-bottom: 0
     &__heading-carousel
-        font-family: Roboto
         font-style: normal
         font-weight: 900
         font-size: 14px
@@ -171,21 +174,47 @@
     &__title2
         margin-top: 70px
     &__text
-        margin-bottom: 20px
+        padding-bottom: 20px
         +marginRL()
         +text()
+    &__image
+        +centerContent()
 .footer
     background-color: $colorTitle
     min-height: 75px
     +centerContent()
-    align-items: center
+    padding-top: 22px
 
     &__copyright
         width: 85px
-        font-family: Roboto
         font-style: normal
         font-weight: normal
         font-size: 7px
         line-height: 8px
         text-align: center
         color: $colorFooter
+
+@media screen and ( min-width: 768px )
+    .logitech
+        padding-top: 54px
+        padding-bottom: 80px
+        background: $colorBack1
+        &__logo
+            width: 240px
+        &__image
+            margin-top: 160px
+            margin-bottom: 124px
+            height: 514px
+            background-image: url(img/MX-Master 1Tablet.png)
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+        &__title
+        +titleT-h2()
+        &__text
+            margin-bottom: 124px
+            margin-right: 155px
+            margin-left: 154px
+        +text()
+        &__arrow
+        +centerContent()
