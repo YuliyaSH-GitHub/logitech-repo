@@ -10,7 +10,7 @@
 //     url("fonts/Roboto/Roboto-Black.woff") format("woff"),
 //     url("fonts/Roboto/Roboto-Black.ttf") format("ttf")
 
-@import "style_mixin.sass"
+@import "style_mixin"
 
 *
     margin: 0
@@ -20,7 +20,7 @@ body
     font-family: Roboto
 
 // .wrapper
-//     // max-width: 375px
+//     max-width: 375px
 //     margin: 0 auto //эта часть под вопросом
 
 .logitech
@@ -46,6 +46,9 @@ body
         +text()
     &__arrow
         +centerContent()
+    &__svg
+        width: 42px
+        height: 22px
 
 .bluetooth
     background-color: $colorBack2
@@ -53,6 +56,9 @@ body
     padding-bottom: 18px
     &__pic
         +centerContent()
+    &__svg
+        width: 18px
+        height: 34px
     &__title
         +title-h2()
         margin-top: 20px
@@ -70,6 +76,8 @@ body
         color: $colorHeading
     &__img
         +centerContent()
+    &__img-master
+        height: 218px
 
 .darkfield
     padding-top: 70px
@@ -114,6 +122,11 @@ body
         +text()
         margin-bottom: 20px
         +marginRL()
+    // &__info-item
+        // width: 375px
+        // height: 240.35px
+// .carousel-inner
+//     +ccenterContent()
 .flow
     background-color: $colorBack2
     padding-top: 70px
@@ -205,16 +218,82 @@ body
             margin-top: 160px
             margin-bottom: 124px
             height: 514px
-            background-image: url(img/MX-Master 1Tablet.png)
-            background-repeat: no-repeat
-            background-size: contain
-            background-position: center
+            background-image: url("img/MX-Master 1Tablet.png")
         &__title
-        +titleT-h2()
+            +titleTablet-h2()
         &__text
-            margin-bottom: 124px
+            margin-bottom: 76px
             margin-right: 155px
             margin-left: 154px
-        +text()
-        &__arrow
-        +centerContent()
+            +textTablet()
+        &__svg
+            width: 61px
+            height: 33px
+
+    .bluetooth
+        padding-top: 80px
+        padding-bottom: 10px
+        +centerContentTablet()
+        &__pic
+            +centerContent()
+        &__svg
+            width: 22px
+            height: 40px
+        &__title
+            +titleTablet-h2()
+            margin-top: 39px
+            margin-bottom: 30px
+        &__text
+            margin-bottom: 76px
+            +marginRLTablet()
+            +textTablet()
+        &__heading
+            font-size: 150px
+            line-height: 176px
+        &__img
+            +centerContent()
+            margin-left: 39px
+            margin-right: 19px
+        &__img-master
+            height: 498px
+
+    .darkfield
+        padding-top: 70px
+        padding-bottom: 61px
+        &__title
+            +titleTablet-h2()
+            margin-bottom: 30px
+        &__text
+            margin-bottom: 50px
+            +marginRLTablet()
+            +textTablet()
+        &__info
+            +centerContent()
+            margin-bottom: 50px
+            column-gap: 30px
+        &__info-box
+            padding: 10px 32px
+            flex-basis: 300px
+            min-height: 170px
+            display: flex
+            flex-direction: column
+            justify-content: center
+        &__heading
+            +titleTablet-h2()
+            text-transform: uppercase
+            margin-bottom: 5px
+        &__desc
+            +textTablet()
+            margin-bottom: 0
+        &__heading-carousel
+            font-size: 24px
+            line-height: 28px
+            margin-top: 50px
+            margin-bottom: 23px
+        &__text-carousel
+            +textTablet()
+            margin-bottom: 20px
+            +marginRLTablet()
+        // &__info-item
+        //     // width: 894px
+        //     // height: 573px

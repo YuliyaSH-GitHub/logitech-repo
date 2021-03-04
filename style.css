@@ -62,6 +62,11 @@ body {
           justify-content: center;
 }
 
+.logitech__svg {
+  width: 42px;
+  height: 22px;
+}
+
 .bluetooth {
   background-color: #EDEDED;
   padding-top: 49px;
@@ -75,6 +80,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.bluetooth__svg {
+  width: 18px;
+  height: 34px;
 }
 
 .bluetooth__title {
@@ -114,6 +124,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.bluetooth__img-master {
+  height: 218px;
 }
 
 .darkfield {
@@ -383,4 +397,158 @@ body {
   color: #C7C8C8;
 }
 
+@media screen and (min-width: 768px) {
+  .logitech {
+    padding-top: 54px;
+    padding-bottom: 80px;
+    background: #E0E1E2;
+  }
+  .logitech__logo {
+    width: 240px;
+  }
+  .logitech__image {
+    margin-top: 160px;
+    margin-bottom: 124px;
+    height: 514px;
+    background-image: url("img/MX-Master 1Tablet.png");
+  }
+  .logitech__title {
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .logitech__text {
+    margin-bottom: 76px;
+    margin-right: 155px;
+    margin-left: 154px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .logitech__svg {
+    width: 61px;
+    height: 33px;
+  }
+  .bluetooth {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bluetooth__pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bluetooth__svg {
+    width: 22px;
+    height: 40px;
+  }
+  .bluetooth__title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-top: 39px;
+    margin-bottom: 30px;
+  }
+  .bluetooth__text {
+    margin-bottom: 76px;
+    margin-right: 77px;
+    margin-left: 77px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .bluetooth__heading {
+    font-size: 150px;
+    line-height: 176px;
+  }
+  .bluetooth__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 39px;
+    margin-right: 19px;
+  }
+  .bluetooth__img-master {
+    height: 498px;
+  }
+  .darkfield {
+    padding-top: 70px;
+    padding-bottom: 61px;
+  }
+  .darkfield__title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 30px;
+  }
+  .darkfield__text {
+    margin-bottom: 50px;
+    margin-right: 77px;
+    margin-left: 77px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .darkfield__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .darkfield__info-box {
+    padding: 10px 32px;
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+    min-height: 170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .darkfield__heading {
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .darkfield__desc {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  .darkfield__heading-carousel {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 50px;
+    margin-bottom: 23px;
+  }
+  .darkfield__text-carousel {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-right: 77px;
+    margin-left: 77px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
