@@ -12,15 +12,34 @@
             height: 100px
             display: flex
             align-items: center
-            justify-content: space-between
+
         &__logo-dark
             display: none
         &__logo-white
             display: block
-            padding-right: 147px
+            width: 150px
+        &__image
+            margin-top: 20px
+            padding-top: 80px
+            margin-bottom: 8px
+            height: 671px
+            background-image: url("img/MX-Master 1big.png")
+        &__title
+            +titleDesktop-h2()
+            margin-bottom: 0
+        &__text
+            margin-bottom: 49px
+            margin-right: 0
+            margin-left: 0
+            +textDesktop()
+        &__svg
+            width: 57px
+            height: 29px
+
     .navbar
         padding-top: 0
         padding-bottom: 0
+        width: 100%
     .navbar-light .navbar-nav .nav-link
         font-weight: 500
         font-size: 12px
@@ -36,3 +55,21 @@
         text-transform: uppercase
         color: $colorContentText
         border-bottom: 1px solid $colorContentText
+    .navbar-expand-lg .navbar-nav .nav-link
+        padding-right: 0
+        padding-left: 0
+    .nav-item
+        padding-right: 21px
+        padding-left: 21px
+        border-right: 1px solid $colorDesktop
+    .nav-item:first-child
+        padding-left: 0
+    .nav-item:last-child
+        border-right: none
+        padding-right: 0
+
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl
+        justify-content: space-between
+
+    .navbar-expand-lg .navbar-collapse
+        justify-content: flex-end
