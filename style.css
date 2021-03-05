@@ -300,7 +300,6 @@ body {
 }
 
 .master__text {
-  margin-bottom: 35px;
   margin-right: 33px;
   margin-left: 34px;
   font-weight: 400;
@@ -357,7 +356,7 @@ body {
 }
 
 .ergonomics__text {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   margin-right: 33px;
   margin-left: 34px;
   font-weight: 400;
@@ -374,6 +373,21 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 310px;
+}
+
+.ergonomics__image1 {
+  background-image: url("img/image 1small.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.ergonomics__image2 {
+  background-image: url("img/image 2small.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
 }
 
 .footer {
@@ -600,6 +614,96 @@ body {
   .flow__item2 {
     border-right: 1px solid #2F3132;
     border-left: 1px solid #2F3132;
+  }
+  .master {
+    padding-bottom: 70px;
+    padding-right: 65px;
+    padding-left: 64px;
+  }
+  .master__title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 30px;
+  }
+  .master__text {
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .master__slider {
+    margin: 54px 197px 150px 200px;
+  }
+  .master__content {
+    padding: 38px 65px 29px 65px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .master__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 25px;
+    padding-right: 61px;
+    padding-left: 62px;
+  }
+  .master__img {
+    height: 35px;
+  }
+  .master__content-text {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .ergonomics__title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 30px;
+    margin-right: 130px;
+    margin-left: 130px;
+  }
+  .ergonomics__title2 {
+    margin-right: 271px;
+    margin-left: 271px;
+  }
+  .ergonomics__text {
+    margin-left: 65px;
+    margin-right: 64px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .ergonomics__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 549px;
+  }
+  .ergonomics__image1 {
+    background-image: url("img/image 1big.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .ergonomics__image2 {
+    background-image: url("img/image 2big.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+  }
+  .footer {
+    min-height: 150px;
+    padding-top: 47px;
+  }
+  .footer__copyright {
+    width: 170px;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

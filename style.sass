@@ -130,7 +130,6 @@ body
     background-image: url("img/High_Resolution_JPG-MX Lifestyle 2346 1.png")
     background-repeat: no-repeat
     background-size: contain
-    block-size:
     background-position: center bottom
     &__title
         +title-h2()
@@ -161,7 +160,6 @@ body
         +title-h2()
         margin-bottom: 20px
     &__text
-        margin-bottom: 35px
         +marginRL()
         +text()
     &__slider
@@ -184,11 +182,23 @@ body
     &__title2
         margin-top: 70px
     &__text
-        padding-bottom: 20px
+        margin-bottom: 20px
         +marginRL()
         +text()
+
     &__image
         +centerContent()
+        height: 310px
+    &__image1
+        background-image: url("img/image 1small.png")
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+    &__image2
+        background-image: url("img/image 2small.png")
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center bottom
 .footer
     background-color: $colorTitle
     min-height: 75px
@@ -328,3 +338,64 @@ body
         &__item2
             border-right: 1px solid $colorTitle
             border-left: 1px solid $colorTitle
+    .master
+        padding-bottom: 70px
+        padding-right: 65px
+        padding-left: 64px
+        &__title
+            +titleTablet-h2()
+            margin-bottom: 30px
+        &__text
+            margin-right: 0
+            margin-left: 0
+            +textTablet()
+        &__slider
+            margin: 54px 197px 150px 200px
+        &__content
+            padding: 38px 65px 29px 65px
+            +textMasterTablet()
+        &__icon
+            display: flex
+            justify-content: space-between
+            margin-bottom: 25px
+            padding-right: 61px
+            padding-left: 62px
+        &__img
+            height: 35px
+        &__content-text
+            margin-right: 0
+            margin-left: 0
+    .ergonomics
+        &__title
+            +titleTablet-h2()
+            margin-bottom: 30px
+            margin-right: 130px
+            margin-left: 130px
+        &__title2
+            margin-right: 271px
+            margin-left: 271px
+        &__text
+            margin-left: 65px
+            margin-right: 64px
+            margin-bottom: 50px
+            +textTablet()
+        &__image
+            +centerContent()
+            height: 549px
+        &__image1
+            background-image: url("img/image 1big.png")
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+        &__image2
+            background-image: url("img/image 2big.png")
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center bottom
+    .footer
+        min-height: 150px
+        padding-top: 47px
+        &__copyright
+            width: 170px
+            font-size: 14px
+            line-height: 16px
