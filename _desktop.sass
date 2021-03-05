@@ -5,8 +5,34 @@
         padding-right: calc( 50% - 580px )
         padding-left: calc( 50% - 580px)
     .logitech
-        padding-top: 54px
         padding-bottom: 80px
         background: $colorBack1
         &__header
             background: $colorTitle
+            height: 100px
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__logo-dark
+            display: none
+        &__logo-white
+            display: block
+            padding-right: 147px
+    .navbar
+        padding-top: 0
+        padding-bottom: 0
+    .navbar-light .navbar-nav .nav-link
+        font-weight: 500
+        font-size: 12px
+        line-height: 14px
+        text-align: center
+        text-transform: uppercase
+        color: $colorContentText
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link
+        font-weight: 500
+        font-size: 12px
+        line-height: 14px
+        text-align: center
+        text-transform: uppercase
+        color: $colorContentText
+        border-bottom: 1px solid $colorContentText

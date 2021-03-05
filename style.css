@@ -10,18 +10,12 @@ body {
 }
 
 .logitech {
-  padding-top: 25px;
   padding-bottom: 48px;
   background: #E0E1E2;
 }
 
 .logitech__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
 }
 
 .logitech__image {
@@ -65,6 +59,26 @@ body {
 .logitech__svg {
   width: 42px;
   height: 22px;
+}
+
+.logitech__logo-white {
+  display: none;
+}
+
+.navbar {
+  padding-top: 25px;
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+}
+
+.navbar > .container-fluid {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bluetooth {
@@ -414,7 +428,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .logitech {
-    padding-top: 54px;
     padding-bottom: 80px;
     background: #E0E1E2;
   }
@@ -441,6 +454,14 @@ body {
   .logitech__svg {
     width: 61px;
     height: 33px;
+  }
+  .navbar {
+    padding-top: 54px;
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: 54px;
+    right: 58px;
   }
   .bluetooth {
     padding-top: 80px;
@@ -713,12 +734,49 @@ body {
     padding-left: calc( 50% - 580px);
   }
   .logitech {
-    padding-top: 54px;
     padding-bottom: 80px;
     background: #E0E1E2;
   }
   .logitech__header {
     background: #2F3132;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .logitech__logo-dark {
+    display: none;
+  }
+  .logitech__logo-white {
+    display: block;
+    padding-right: 147px;
+  }
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
   }
 }
 /*# sourceMappingURL=style.css.map */

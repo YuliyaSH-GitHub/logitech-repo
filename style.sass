@@ -20,11 +20,10 @@ body
     font-family: Roboto
 
 .logitech
-    padding-top: 25px
     padding-bottom: 48px
     background: $colorBack1
     &__header
-        +centerContent()
+        position: relative
     &__image
         margin-top: 94px
         margin-bottom: 67px
@@ -45,6 +44,19 @@ body
     &__svg
         width: 42px
         height: 22px
+    &__logo-white
+        display: none
+.navbar
+    padding-top: 25px
+
+.navbar-toggler
+    position: absolute
+    top: 25px
+    right: 28px
+.navbar>.container-fluid
+    justify-content: center
+// .navbar-light .navbar-toggler-icon
+//     background-image: url("img/menu-burger.svg")
 
 .bluetooth
     background-color: $colorBack2
