@@ -5,22 +5,181 @@
         padding-top: 54px
         padding-bottom: 80px
         background: $colorBack1
-    // .logitech__logo
-    //     width: 240px
-        // &__image
-        //     margin-top: 160px
-        //     margin-bottom: 124px
-        //     height: 514px
-        //     background-image: url(img/MX-Master 1Tablet.png)
-        //     background-repeat: no-repeat
-        //     background-size: contain
-        //     background-position: center
-        // &__title
-        // +titleT-h2()
-        // &__text
-        //     margin-bottom: 124px
-        //     margin-right: 155px
-        //     margin-left: 154px
-        // +text()
-        // &__arrow
-        // +centerContent()
+        &__logo
+            width: 240px
+        &__image
+            margin-top: 160px
+            margin-bottom: 124px
+            height: 514px
+            background-image: url("img/MX-Master 1Tablet.png")
+        &__title
+            +titleTablet-h2()
+        &__text
+            margin-bottom: 76px
+            margin-right: 155px
+            margin-left: 154px
+            +textTablet()
+        &__svg
+            width: 61px
+            height: 33px
+
+    .bluetooth
+        padding-top: 80px
+        padding-bottom: 10px
+        +centerContentTablet()
+        &__pic
+            +centerContent()
+        &__svg
+            width: 22px
+            height: 40px
+        &__title
+            +titleTablet-h2()
+            margin-top: 39px
+            margin-bottom: 30px
+        &__text
+            margin-bottom: 76px
+            +marginRLTablet()
+            +textTablet()
+        &__heading
+            font-size: 150px
+            line-height: 176px
+        &__img
+            +centerContent()
+            margin-left: 39px
+            margin-right: 19px
+        &__img-master
+            height: 498px
+
+    .darkfield
+        padding-top: 70px
+        padding-bottom: 61px
+        &__title
+            +titleTablet-h2()
+            margin-bottom: 30px
+        &__text
+            margin-bottom: 50px
+            +marginRLTablet()
+            +textTablet()
+        &__info
+            +centerContent()
+            margin-bottom: 50px
+            column-gap: 30px
+        &__info-box
+            padding: 10px 32px
+            flex-basis: 300px
+            min-height: 170px
+            display: flex
+            flex-direction: column
+            justify-content: center
+        &__heading
+            +titleTablet-h2()
+            text-transform: uppercase
+            margin-bottom: 5px
+        &__desc
+            +textTablet()
+            margin-bottom: 0
+        &__heading-carousel
+            font-size: 24px
+            line-height: 28px
+            margin-top: 50px
+            margin-bottom: 23px
+        &__text-carousel
+            +textTablet()
+            margin-bottom: 20px
+            +marginRLTablet()
+
+    .flow
+        padding-bottom: 496px
+        background-image: url("img/High_Resolution_JPG-MX Lifestyle 2346 2.png")
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center bottom
+        &__title
+            +titleTablet-h2()
+            margin-bottom: 30px
+            margin-right: 129px
+            margin-left: 129px
+        &__text
+            margin-bottom: 70px
+            margin-right: 65px
+            margin-left: 64px
+            +textTablet()
+        &__list
+            +centerContent()
+        &__item
+            width: auto
+            font-size: 20px
+            line-height: 23px
+            text-align: left
+            padding: 8px 15px 4px 15px
+        &__item:first-child
+            padding-left: 0
+        &__item:last-child
+            padding-right: 0
+        ::marker
+            font-size: 20px
+            line-height: 23px
+        &__item2
+            border-right: 1px solid $colorTitle
+            border-left: 1px solid $colorTitle
+    .master
+        padding-bottom: 70px
+        padding-right: 65px
+        padding-left: 64px
+        &__title
+            +titleTablet-h2()
+            margin-bottom: 30px
+        &__text
+            margin-right: 0
+            margin-left: 0
+            +textTablet()
+        &__slider
+            margin: 54px 197px 150px 200px
+        &__content
+            padding: 38px 65px 29px 65px
+            +textMasterTablet()
+        &__icon
+            display: flex
+            justify-content: space-between
+            margin-bottom: 25px
+            padding-right: 61px
+            padding-left: 62px
+        &__img
+            height: 35px
+        &__content-text
+            margin-right: 0
+            margin-left: 0
+    .ergonomics
+        &__title
+            +titleTablet-h2()
+            margin-bottom: 30px
+            margin-right: 130px
+            margin-left: 130px
+        &__title2
+            margin-right: 205px
+            margin-left: 205px
+        &__text
+            margin-left: 65px
+            margin-right: 64px
+            margin-bottom: 50px
+            +textTablet()
+        &__image
+            +centerContent()
+            height: 549px
+        &__image1
+            background-image: url("img/image 1big.png")
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+        &__image2
+            background-image: url("img/image 2big.png")
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center bottom
+    .footer
+        min-height: 150px
+        padding-top: 47px
+        &__copyright
+            width: 170px
+            font-size: 14px
+            line-height: 16px
