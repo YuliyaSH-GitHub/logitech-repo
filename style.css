@@ -138,10 +138,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url("img/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1small.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 295px;
 }
 
 .bluetooth__img-master {
   height: 218px;
+}
+
+.bluetooth__img-masterFront {
+  display: none;
 }
 
 .darkfield {
@@ -513,11 +522,8 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 39px;
-    margin-right: 19px;
-  }
-  .bluetooth__img-master {
-    height: 498px;
+    background-image: url("img/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1.png");
+    height: 640px;
   }
   .darkfield {
     padding-top: 70px;
@@ -804,8 +810,8 @@ body {
     padding-left: 0;
   }
   .nav-item {
-    padding-right: 21px;
-    padding-left: 21px;
+    padding-right: 18px;
+    padding-left: 18px;
     border-right: 1px solid #494949;
   }
   .nav-item:first-child {
@@ -824,6 +830,60 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .bluetooth {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bluetooth__title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .bluetooth__text {
+    margin-bottom: 14px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .bluetooth__heading {
+    font-size: 96px;
+    line-height: 112px;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 80px;
+  }
+  .bluetooth__heading-70 {
+    font-size: 300px;
+    line-height: 352px;
+  }
+  .bluetooth__heading-day {
+    padding-top: 45px;
+  }
+  .bluetooth__img {
+    height: 426px;
+    background: url("img/High_Resolution_PNG-MX Master 3 FRONT GRAPHITE 1Desk.png") no-repeat 0 119px, url("img/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1Desk.png") no-repeat right 119px;
+  }
+  .bluetooth__img-center {
+    padding-right: calc( 50% - 622px);
+    padding-left: calc( 50% - 622px);
   }
 }
 /*# sourceMappingURL=style.css.map */

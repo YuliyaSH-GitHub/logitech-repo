@@ -59,8 +59,8 @@
         padding-right: 0
         padding-left: 0
     .nav-item
-        padding-right: 21px
-        padding-left: 21px
+        padding-right: 18px
+        padding-left: 18px
         border-right: 1px solid $colorDesktop
     .nav-item:first-child
         padding-left: 0
@@ -73,3 +73,35 @@
 
     .navbar-expand-lg .navbar-collapse
         justify-content: flex-end
+
+    .bluetooth
+        padding-top: 80px
+        padding-bottom: 70px
+        +centerContentTablet()
+        &__title
+            +titleDesktop-h2()
+            margin-top: 35px
+            margin-bottom: 35px
+        &__text
+            margin-bottom: 14px
+            +marginRLDesktop()
+            +textDesktop()
+        &__heading
+            font-size: 96px
+            line-height: 112px
+            margin: 0
+            display: flex
+            justify-content: center
+            padding-left: 80px
+        &__heading-70
+            font-size: 300px
+            line-height: 352px
+        &__heading-day
+            padding-top: 45px
+        &__img
+            height: 426px
+            background: url("img/High_Resolution_PNG-MX Master 3 FRONT GRAPHITE 1Desk.png") no-repeat 0 119px,
+            url("img/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1Desk.png") no-repeat right 119px
+        &__img-center
+            padding-right: calc( 50% - 622px )
+            padding-left: calc( 50% - 622px)
