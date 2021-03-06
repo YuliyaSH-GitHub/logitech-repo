@@ -125,7 +125,7 @@
         </div>
       </div>
     </section>
-    <section class="darkfield center">
+    <section class="darkfield">
       <h2 class="darkfield__title">ЗА ЛЮБЫМ СТОЛОМ</h2>
       <p class="darkfield__text">
         Исследуйте ландшафты своего дома, не отвлекаясь от работы. MX Master 3
@@ -144,68 +144,93 @@
       </div>
 
       <!-- carousel getbootstrap -->
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide pointer-event"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class=""
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-            class=""
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-            class="active"
-            aria-current="true"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item darkfield__info-item">
-            <img src="img/wood.jpg" class="d-block w-100" alt="wood.jpg" />
-          </div>
-          <div class="carousel-item darkfield__info-item">
-            <img src="img/glass.jpg" class="d-block w-100" alt="glass.jpg" />
-          </div>
-          <div class="carousel-item active darkfield__info-item">
-            <img
-              src="img/linoleum.jpg"
-              class="d-block w-100"
-              alt="linoleum.jpg"
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
+      <div class="darkfield__slider">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide pointer-event"
+          data-bs-ride="carousel"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class=""
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class=""
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class="active"
+              aria-current="true"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item darkfield__info-item">
+              <img
+                src="img/wood.jpg"
+                class="d-block w-100 darkfield__image"
+                alt="wood.jpg"
+              />
+              <img
+                src="img/woodDesk.jpg"
+                class="w-100 darkfield__imageDesk"
+                alt="wood.jpg"
+              />
+            </div>
+            <div class="carousel-item darkfield__info-item">
+              <img
+                src="img/glass.jpg"
+                class="d-block w-100 darkfield__image"
+                alt="glass.jpg"
+              />
+              <img
+                src="img/glassDesk.jpg"
+                class="w-100 darkfield__imageDesk"
+                alt="glass.jpg"
+              />
+            </div>
+            <div class="carousel-item active darkfield__info-item">
+              <img
+                src="img/linoleum.jpg"
+                class="d-block w-100 darkfield__image"
+                alt="linoleum.jpg"
+              />
+              <img
+                src="img/linoleumDesk.jpg"
+                class="w-100 darkfield__imageDesk"
+                alt="linoleum.jpg"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
       <h4 class="darkfield__heading-carousel">Переключите поверхность</h4>
       <p class="darkfield__text-carousel">
@@ -213,7 +238,7 @@
         поверхности, даже на стекле.
       </p>
     </section>
-    <section class="flow center">
+    <section class="flow flow__center">
       <h2 class="flow__title">ОДНОВРЕМЕННО С НЕСКОЛЬКИХ УСТРОЙСТВ</h2>
       <p class="flow__text">
         С технологией Flow вы сможете работать одновременно на нескольких
