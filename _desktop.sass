@@ -167,3 +167,57 @@
         &__center
             padding-right: calc( 50% - 479px )
             padding-left: calc( 50% - 479px )
+
+    .master
+        padding-top: 100px
+        padding-bottom: 100px
+        &__title
+            +titleDesktop-h2()
+            margin-bottom: 30px
+        &__text
+            width: 958px
+            margin: auto
+            +textDesktop()
+        &__image
+            display: block
+            margin-top: 72px
+            display: flex
+            justify-content: center
+        &__slider
+            display: none
+        &__content-center
+            margin: 0
+            padding-right: calc( 50% - 374px )
+            padding-left: calc( 50% - 374px )
+        &__content
+            padding: 38px 57px 29px 57px
+            +textDesktop()
+        &__content-text
+            margin: 0
+
+// не сделано
+    .ergonomics
+        padding-top: 70px
+        &__title
+            +title-h2()
+            margin-bottom: 20px
+        &__title2
+            margin-top: 70px
+        &__text
+            margin-bottom: 20px
+            +marginRL()
+            +text()
+
+        &__image
+            +centerContent()
+            height: 310px
+        &__image1
+            background-image: url("img/image 1small.png")
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+        &__image2
+            background-image: url("img/image 2small.png")
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center bottom
