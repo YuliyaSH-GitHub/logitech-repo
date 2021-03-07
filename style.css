@@ -1020,5 +1020,70 @@ body {
   .master__content-text {
     margin: 0;
   }
+  .ergonomics {
+    overflow: hidden;
+    padding-top: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 655px 655px;
+        grid-template-columns: 655px 655px;
+    -ms-grid-rows: 557px 557px;
+        grid-template-rows: 557px 557px;
+  }
+  .ergonomics__center {
+    padding-right: calc( 50% - 656px);
+    padding-left: calc( 50% - 656px);
+  }
+  .ergonomics__desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ergonomics__desc-top {
+    padding-left: 37px;
+  }
+  .ergonomics__desc-bottom {
+    padding-right: 37px;
+  }
+  .ergonomics__title {
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .ergonomics__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .ergonomics__title1, .ergonomics__text1 {
+    text-align: left;
+    margin-right: 217px;
+  }
+  .ergonomics__title2, .ergonomics__text2 {
+    text-align: right;
+    margin-left: 224px;
+  }
+  .ergonomics__image {
+    height: 557px;
+  }
+  .ergonomics__image1 {
+    background-image: url("img/image 1Desk.png");
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .ergonomics__image2 {
+    background-image: url("img/image 2Desk.png");
+  }
 }
 /*# sourceMappingURL=style.css.map */

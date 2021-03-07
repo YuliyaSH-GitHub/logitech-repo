@@ -195,29 +195,42 @@
         &__content-text
             margin: 0
 
-// не сделано
     .ergonomics
-        padding-top: 70px
+        overflow: hidden
+        padding-top: 0
+        display: grid
+        grid-template-columns: 655px 655px
+        grid-template-rows: 557px 557px
+        &__center
+            padding-right: calc( 50% - 656px )
+            padding-left: calc( 50% - 656px )
+        &__desc
+            display: flex
+            flex-direction: column
+            justify-content: center
+        &__desc-top
+            padding-left: 37px
+        &__desc-bottom
+            padding-right: 37px
         &__title
-            +title-h2()
-            margin-bottom: 20px
-        &__title2
-            margin-top: 70px
+            +titleDesktop-h2()
+            margin: 0
+            margin-bottom: 30px
         &__text
+            margin: 0
             margin-bottom: 20px
-            +marginRL()
-            +text()
-
+            +textDesktop()
+        &__title1, &__text1
+            text-align: left
+            margin-right: 217px
+        &__title2, &__text2
+            text-align: right
+            margin-left: 224px
         &__image
-            +centerContent()
-            height: 310px
+            height: 557px
         &__image1
-            background-image: url("img/image 1small.png")
-            background-repeat: no-repeat
-            background-size: contain
-            background-position: center
+            background-image: url("img/image 1Desk.png")
+            grid-column: 1
+            grid-row: 1
         &__image2
-            background-image: url("img/image 2small.png")
-            background-repeat: no-repeat
-            background-size: contain
-            background-position: center bottom
+            background-image: url("img/image 2Desk.png")
