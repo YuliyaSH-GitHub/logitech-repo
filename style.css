@@ -235,7 +235,7 @@ body {
   text-align: center;
   color: #2F3132;
   margin-top: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 .darkfield__text-carousel {
@@ -250,6 +250,51 @@ body {
 
 .darkfield__imageDesk {
   display: none;
+}
+
+.darkfield__button1 {
+  background-image: url("img/wood-texture1.png");
+}
+
+.darkfield__button2 {
+  background-image: url("img/wood-texture2.png");
+}
+
+.darkfield__button3 {
+  background-image: url("img/linoleum-texture3.png");
+}
+
+.darkfield__button4 {
+  background-image: url("img/cloth-texture3.png");
+}
+
+.darkfield__button5 {
+  background-image: url("img/marble-texture3.png");
+}
+
+.darkfield__button1, .darkfield__button2, .darkfield__button3, .darkfield__button4, .darkfield__button5 {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-indicators {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 30px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("img/arrow-left.svg");
+}
+
+.carousel-control-next-icon {
+  background-image: url("img/arrow-right.svg");
 }
 
 .flow {
@@ -367,6 +412,22 @@ body {
 
 .master__image {
   display: none;
+}
+
+.master__slider-indicators {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.master__slider-indicators [data-bs-target] {
+  background-color: #C4C4C4;
+  width: 15px;
+  height: 15px;
+}
+
+.master__slider-indicators .active {
+  background-color: #2F3132;
 }
 
 .ergonomics {
@@ -591,7 +652,7 @@ body {
     font-size: 24px;
     line-height: 28px;
     margin-top: 50px;
-    margin-bottom: 23px;
+    margin-bottom: 86px;
   }
   .darkfield__text-carousel {
     font-size: 24px;

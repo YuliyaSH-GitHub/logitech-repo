@@ -118,12 +118,39 @@ body
         text-align: center
         color: $colorTitle
         margin-top: 28px
-        margin-bottom: 20px
+        margin-bottom: 70px
+
     &__text-carousel
         +text()
         +marginRL()
     &__imageDesk
         display: none
+    &__button1
+        background-image: url("img/wood-texture1.png")
+    &__button2
+        background-image: url("img/wood-texture2.png")
+    &__button3
+        background-image: url("img/linoleum-texture3.png")
+    &__button4
+        background-image: url("img/cloth-texture3.png")
+    &__button5
+        background-image: url("img/marble-texture3.png")
+    &__button1, &__button2, &__button3, &__button4, &__button5
+        width: 30px
+        height: 30px
+
+.carousel-indicators
+    justify-content: space-between
+.carousel-indicators [data-bs-target]
+    height: 30px
+    border-radius: 50%
+    opacity: 1
+.carousel-control-prev-icon
+    background-image: url("img/arrow-left.svg")
+.carousel-control-next-icon
+    background-image: url("img/arrow-right.svg")
+// .carousel-control-prev, .carousel-control-next
+//     top: 322px
 
 .flow
     background-color: $colorBack2
@@ -179,6 +206,17 @@ body
         +marginRL()
     &__image
         display: none
+    &__image-item
+
+.master__slider-indicators
+    justify-content: space-between
+.master__slider-indicators [data-bs-target]
+    background-color: $colorHeading
+    width: 15px
+    height: 15px
+.master__slider-indicators .active
+    background-color: $colorTitle
+
 .ergonomics
     padding-top: 70px
     &__title
